@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Coordinate Plot</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .svgDiv {
+            width: 800px;
+            height: 800px;
+            position: relative;
+        }
+
+        .showData {
+            display: none;
+            position: absolute;
+            right: 50px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="svgDiv">
+
+    </div>
+
+    <div class="showData">
+        <p id="level">Səviyyə: <span></span></p>
+        <p id="point">Dib nöqtəsi:<span></span></p>
+        <p id="wellDepth">Quyunun dərinliyi:<span></span></p>
+        <p id="additionalDepth">Əlavə qazma dərinliyi:<span></span></p>
+        <p id="commonDepth">Ümumi dərinlik:<span></span></p>
+        <p>Labarotoriyaya göndərildi: <input type="checkbox" /></p>
+        <p>Quyunun eni: <input type="number" id="hole_width" /></p>
+        <p>Qazıldı: <input type="text" /></p>
+        <button id="approve">Təsdiq edin</button>
+        <button id="cancel">Ləğv edin</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
